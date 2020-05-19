@@ -1,0 +1,12 @@
+# hardware config
+num_workers: 4
+gpu: ''
+
+# testing config
+eval_epoch_interval: 1
+
+# logging config
+log_step_interval: 5
+comet_api_key: zFVfmiGZEqH5GPX1GBJFZXkq5
+wandb_api_key: a5718c9c1cebf36d6d015f08edbb19be179b963f
+

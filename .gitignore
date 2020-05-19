@@ -1,0 +1,10 @@
+*.pyc
+*.pyo
+/.datasets
+/.logs
+/.vscode
+*/__pycache__
+__pycache__/
+/mdata
+/mground
+*.test.py

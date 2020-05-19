@@ -1,0 +1,19 @@
+project_name: XXX_model
+enable_log: false
+
+gpu: 0
+
+# training config
+batch_size: 256
+epoch: 20
+
+# config for wide resnet
+depth: 40
+widen_factor: 4
+drop_rate: 0
+
+# config for aleatoric cross entropyLoss
+monte_carlo_simuls: 100
+
+# config for odd 
+eval_sample_num: 10
