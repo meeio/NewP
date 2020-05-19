@@ -78,7 +78,7 @@ class XXX_model(TrainableModel):
         # lr_schedulers are defined in /mtrain/partial_lr_scheduler.py
         with self.optimize_config(
                 optimer=pAdam(lr=1e-3),
-                lr_scheduler=pStep_lr(step_size=10, gamma=0.5),
+                lr_scheduler=pStep_lr(step_size=10, gamma=0.1),
         ):
             self.optimize_loss('global_loss', L, ['Net'])
             self.record_metric('L_nll', L_nll)

@@ -191,9 +191,6 @@ class TrainableModel(ABC):
                 ctx = {k: torch.cat(ctx[k], dim=0) for k in ctx}
                 preds = torch.cat(preds, dim=0)
                 targs = torch.cat(targs, dim=0)
-                print(preds.shape)
-                print(targs.shape)
-                assert False
                 for met in self.measures:
                     tag = met.tag + '@eval_' + key
                     val = met.cal(preds, targs, ctx)
